@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RM Cafe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../images/logo - Cafe Project.png"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="../images/logo - Cafe Project.png" />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="../images/logo - Cafe Project.png"
+            alt="RM Cafe logo"
+            class="logo-image"
+          />
+          <h1>RM CAFE</h1>
+        </div>
+        <nav class="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="#" class="nav-link" data-modal-target="aboutModal"
+            >About Us</a
+          >
+        </nav>
+        <div class="nav-icons">
+          <a href="dashboard.html" class="icon-link">📊</a>
+          <a href="#cart" class="icon-link">🛒</a>
+        </div>
+        <button class="demo-btn">Sign In</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>ORDER<span class="highlight"> COFFEE</span></h2>
+        <p>
+          Welcome Our Sweet Drinks_Enjoy the perfect blend of flavor and your
+          time.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img
+          src="../images/header-coffee.jpg"
+          alt="Coffee cup and croissants"
+          class="hero-image-photo"
+        />
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="menu-header">
+        <h2>Menu</h2>
+      </div>
+
+      <!-- Categories -->
+      <div class="categories">
+        <button class="category-btn active">Iced Coffee</button>
+        <button class="category-btn">Milk-Based Coffee</button>
+        <button class="category-btn">Classic Coffee</button>
+        <button class="category-btn">Specialty Coffee</button>
+        <button class="category-btn">Sweet Coffee</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-container">
+        <button class="nav-arrow prev">‹</button>
+
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-image">☕</div>
+            <h3>Espresso</h3>
+            <p class="product-desc">Strong black coffee</p>
+            <div class="product-footer">
+              <span class="price">$2.50</span>
+              <button class="add-btn">+ Add</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">☕</div>
+            <h3>Americano</h3>
+            <p class="product-desc">Espresso with hot water</p>
+            <div class="product-footer">
+              <span class="price">$3.00</span>
+              <button class="add-btn">+ Add</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">☕</div>
+            <h3>Latte</h3>
+            <p class="product-desc">Espresso + milk</p>
+            <div class="product-footer">
+              <span class="price">$4.00</span>
+              <button class="add-btn">+ Add</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">☕</div>
+            <h3>Macchiato</h3>
+            <p class="product-desc">Espresso + milk foam</p>
+            <div class="product-footer">
+              <span class="price">$3.50</span>
+              <button class="add-btn">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav-arrow next">›</button>
+      </div>
+
+      <button class="more-btn">More</button>
+    </section>
+
+    <!-- New Drink Section -->
+    <section class="new-drink">
+      <div class="new-drink-content">
+        <h2>New <span class="light">collection</span></h2>
+        <h3>Cappuccino</h3>
+        <p class="new-description">Espresso with steamed milk.</p>
+
+        <!-- <div class="features">
+          <div class="feature-item">
+            <span class="feature-number">4</span>
+            <p>Total<br /><span class="feature-detail">Orders</span></p>
+          </div>
+          <div class="feature-item">
+            <p><span class="feature-detail"></span><br /></p>
+          </div>
+          <div class="feature-item">
+            <span class="feature-number">20%</span>
+            <p><span class="feature-detail">discount</span></p>
+          </div>
+        </div> -->
+
+        <div class="new-price">
+          <span class="current-price">$4.50</span>
+          <span class="old-price">$5.60</span>
+        </div>
+      </div>
+      <div class="new-drink-image">
+        <div class="product-display-large">
+          <img src="../images/New Collection.jpg" alt="Cappuccino" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <p>
+          Have a question, feedback, or want to order ahead? Reach out through
+          our contact form, chat with us on social media, or visit our cafe.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Support</h3>
+          <p>
+            We are here to help you with orders, menu questions, or cafe
+            services.
+          </p>
+          <div class="contact-info">
+            <p><strong>Location:</strong> Phnom Penh, Cambodia</p>
+            <p><strong>Phone:</strong> (+855) 10 444 404</p>
+            <p><strong>Email:</strong> puthearunsem@gmail.com</p>
+          </div>
+          <div class="social-panel">
+            <p>Connect on social media</p>
+            <div class="social-buttons">
+              <button class="social-btn" data-social-name="Facebook">
+                <span class="social-icon">📘</span> Facebook
+              </button>
+              <button class="social-btn" data-social-name="Instagram">
+                <span class="social-icon">📸</span> Instagram
+              </button>
+              <button class="social-btn" data-social-name="Twitter">
+                <span class="social-icon">🐦</span> Twitter
+              </button>
+              <button class="social-btn" data-social-name="LinkedIn">
+                <span class="social-icon">💼</span> LinkedIn
+              </button>
+              <button class="social-btn" data-social-name="WhatsApp">
+                <span class="social-icon">💬</span> WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <h3>Send us a message</h3>
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input
+              type="text"
+              id="contactName"
+              name="contactName"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="contactEmail"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea
+              id="contactMessage"
+              name="contactMessage"
+              rows="5"
+              placeholder="How can we help you?"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="login-btn">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-map-section">
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d266437.3662629851!2d104.72537517814058!3d11.579317638388519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76a6be3%3A0x9c010ee85ab525bb!2z4Z6X4Z-S4Z6T4Z-G4Z6W4Z-B4Z6J!5e1!3m2!1skm!2skh!4v1780323034794!5m2!1skm!2skh"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Sign In</h2>
+          <button class="close-btn">&times;</button>
+        </div>
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+          <div class="remember-forgot">
+            <label class="remember-me">
+              <input type="checkbox" /> Remember me
+            </label>
+            <a href="#" id="forgotPasswordLink" class="forgot-password"
+              >Forgot password?</a
+            >
+          </div>
+          <button type="submit" class="login-btn">Sign In</button>
+          <p class="signup-text">
+            Don't have an account? <a href="#" class="signup-link">Sign Up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Gmail Help Modal -->
+    <div id="gmailModal" class="modal gmail-modal">
+      <div class="modal-content gmail-modal-content">
+        <div class="modal-header">
+          <h2>Need a Gmail Account?</h2>
+          <button class="close-btn" id="gmailModalClose">&times;</button>
+        </div>
+        <div class="gmail-dialog-body">
+          <p>
+            If you don't remember your password, you can create a new Gmail
+            account to use with your RM CAFE orders and website login.
+          </p>
+          <p>
+            Google accounts provide a secure email address for signing in and
+            managing your order notifications.
+          </p>
+          <div class="gmail-actions">
+            <button id="createGmailBtn" class="external-btn">
+              Create new Gmail account
+            </button>
+            <button id="openGmailSignInBtn" class="external-btn secondary-btn">
+              Go to Gmail sign-in
+            </button>
+          </div>
+          <p class="gmail-note">
+            This will open the official Google page in a new browser tab.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Modal -->
+    <div id="aboutModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>About Us</h2>
+          <button class="close-btn" data-close-modal>&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            RM CAFE is dedicated to serving premium coffee with a warm customer
+            experience. Our focus is on freshly roasted beans, skilled baristas,
+            and thoughtful service.
+          </p>
+          <ul class="info-list">
+            <li>
+              <strong>Premium quality:</strong> Single-origin beans and fresh
+              bakery ingredients.
+            </li>
+            <li>
+              <strong>Expert baristas:</strong> Crafted drinks, latte art, and
+              flavor consistency.
+            </li>
+            <li>
+              <strong>Community first:</strong> Comfortable workspace for study,
+              meetings, and hangouts.
+            </li>
+            <li>
+              <strong>Fresh menu:</strong> Seasonal specials, classic favorites,
+              and sweet treats.
+            </li>
+          </ul>
+          <a href="menu.html" class="external-btn"> See full story </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Modal -->
+    <div id="socialModal" class="modal">
+      <div class="modal-content social-modal-content">
+        <div class="modal-header">
+          <h2 id="socialModalTitle">Social Media</h2>
+          <button class="close-btn" data-close-modal>&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Choose a channel below to connect with RM CAFE, leave feedback, or
+            follow the latest updates.
+          </p>
+          <div class="social-action-grid">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              class="external-btn social-link"
+              data-social-name="Facebook"
+              ><span class="social-icon">📘</span> Facebook</a
+            >
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              class="external-btn social-link"
+              data-social-name="Instagram"
+              ><span class="social-icon">📸</span> Instagram</a
+            >
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              class="external-btn social-link"
+              data-social-name="Twitter"
+              ><span class="social-icon">🐦</span> Twitter</a
+            >
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              class="external-btn social-link"
+              data-social-name="LinkedIn"
+              ><span class="social-icon">💼</span> LinkedIn</a
+            >
+            <a
+              href="https://www.whatsapp.com"
+              target="_blank"
+              rel="noreferrer"
+              class="external-btn social-link"
+              data-social-name="WhatsApp"
+              ><span class="social-icon">💬</span> WhatsApp</a
+            >
+          </div>
+          <button class="external-btn secondary-btn" data-close-modal>
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 RM CAFE. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+  </body>
+</html>

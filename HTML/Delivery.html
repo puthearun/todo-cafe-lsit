@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RM CAFE - Delivery</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h1>☕ RM CAFE</h1>
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="delivery.html" class="nav-link active">Delivery</a>
+        </nav>
+        <div class="nav-icons">
+          <a href="dashboard.html" class="icon-link">📊</a>
+        </div>
+        <a href="index.html" class="demo-btn">Sign In</a>
+      </div>
+    </header>
+
+    <section class="menu-hero">
+      <div class="hero-content">
+        <h2>Delivery Options</h2>
+        <p>Find the right way to receive your order from RM CAFE.</p>
+      </div>
+    </section>
+
+    <section class="menu-options-section">
+      <div class="section-header">
+        <h2>Delivery Choices</h2>
+        <p>
+          Choose a delivery style that matches your pace and get extra details
+          in the dialog.
+        </p>
+      </div>
+
+      <div class="menu-category-tabs delivery-tabs">
+        <button class="tab-btn active">All</button>
+        <button class="tab-btn">Delivery</button>
+        <button class="tab-btn">Pickup</button>
+        <button class="tab-btn">Schedule</button>
+      </div>
+
+      <div class="menu-options-grid">
+        <article class="delivery-card">
+          <div class="menu-card-head">
+            <h3>Home Delivery</h3>
+            <span class="item-tag">Quick</span>
+          </div>
+          <p class="menu-card-copy">
+            Get your coffee delivered fast with contactless drop-off and
+            tracking.
+          </p>
+          <div class="menu-card-meta">
+            <button class="delivery-detail-btn" data-delivery-id="homeDelivery">
+              More Info
+            </button>
+          </div>
+        </article>
+
+        <article class="delivery-card">
+          <div class="menu-card-head">
+            <h3>Store Pickup</h3>
+            <span class="item-tag">Convenient</span>
+          </div>
+          <p class="menu-card-copy">
+            Order ahead and grab your drinks from the cafe counter in minutes.
+          </p>
+          <div class="menu-card-meta">
+            <button class="delivery-detail-btn" data-delivery-id="storePickup">
+              More Info
+            </button>
+          </div>
+        </article>
+
+        <article class="delivery-card">
+          <div class="menu-card-head">
+            <h3>Scheduled Delivery</h3>
+            <span class="item-tag">Planned</span>
+          </div>
+          <p class="menu-card-copy">
+            Reserve a delivery window up to 24 hours ahead for perfect timing.
+          </p>
+          <div class="menu-card-meta">
+            <button
+              class="delivery-detail-btn"
+              data-delivery-id="scheduledDelivery"
+            >
+              More Info
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div id="deliveryModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="deliveryModalTitle">Delivery Option</h2>
+          <button class="close-btn" data-close-modal>&times;</button>
+        </div>
+        <div class="menu-modal-body">
+          <p id="deliveryModalTiming"></p>
+          <p id="deliveryModalDescription"></p>
+          <ul id="deliveryModalBenefits"></ul>
+          <button class="external-btn" id="deliveryModalActionBtn">
+            Confirm Delivery Choice
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 RM CAFE. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/menuDelivery.js"></script>
+  </body>
+</html>
