@@ -1,18 +1,20 @@
 {
-  "name": "java-basic",
+  "name": "rm-cafe",
   "version": "1.0.0",
-  "description": "Java Basic project",
+  "description": "RM Cafe web app UI project",
   "scripts": {
-    "start": "javac JavaBasic/*.java && java -cp JavaBasic Main",
-    "dev": "javac JavaBasic/*.java && java -cp JavaBasic Main && powershell Remove-Item JavaBasic/*.class -Force",
-    "server": "live-server \"JavaBasic\" --open=HTML/index.html",
-    "server:chrome": "live-server \"JavaBasic\" --open=HTML/index.html --browser=chrome",
-    "server:edge": "live-server \"JavaBasic\" --open=HTML/index.html --browser=edge"
+    "start": "live-server . --open=index.html",
+    "server": "live-server . --open=index.html",
+    "server:chrome": "live-server . --open=index.html --browser=chrome",
+    "server:edge": "live-server . --open=index.html --browser=edge"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.0"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^12.2.0"
+  }
 }

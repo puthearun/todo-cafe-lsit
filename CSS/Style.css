@@ -1,3 +1,17 @@
+ Modern Editorial Roast Design Tokens
+:root {
+  --bg-dark-base: #0b0908;
+  --bg-dark-card: rgba(32, 28, 25, 0.55);
+  --bg-dark-navbar: rgba(11, 9, 8, 0.85);
+  --accent-copper: #cf7e53;
+  --accent-copper-hover: #b5683d;
+  --accent-copper-glow: rgba(207, 126, 83, 0.18);
+  --border-translucent: rgba(207, 126, 83, 0.2);
+  --text-cream: #f5f1eb;
+  --text-beige: #c5bfae;
+  --text-gold: #e8cfad;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +20,8 @@
 
 body {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #0b1220;
-  color: #f3ecd4;
+  background-color: #0b0908;
+  color: #f5f1eb;
   line-height: 1.6;
 }
 
@@ -26,13 +40,13 @@ textarea {
 }
 
 ::selection {
-  background: rgba(212, 175, 55, 0.25);
+  background: rgba(207, 126, 83, 0.25);
 }
 
 /* Navigation */
 .navbar {
-  background-color: rgba(10, 16, 32, 0.95);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.35);
+  background-color: rgba(11, 9, 8, 0.85);
+  border-bottom: 1px solid rgba(207, 126, 83, 0.35);
   padding: 20px 0;
   position: sticky;
   top: 0;
@@ -60,12 +74,12 @@ textarea {
   height: 55px;
   object-fit: contain;
   border-radius: 999px;
-  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.18);
+  box-shadow: 0 12px 30px rgba(207, 126, 83, 0.2);
 }
 
 .logo h1 {
   font-size: 1.8em;
-  color: #f8e7c2;
+  color: #e8cfad;
   font-weight: 800;
   letter-spacing: 1px;
 }
@@ -76,7 +90,7 @@ textarea {
 }
 
 .nav-link {
-  color: #d9c89f;
+  color: #c5bfae;
   text-decoration: none;
   font-size: 1em;
   font-weight: 500;
@@ -87,8 +101,8 @@ textarea {
 
 .nav-link:hover,
 .nav-link.active {
-  color: #f8e7c2;
-  border-bottom: 2px solid #d4af37;
+  color: #e8cfad;
+  border-bottom: 2px solid #cf7e53;
 }
 
 .nav-icons {
@@ -98,7 +112,7 @@ textarea {
 }
 
 .icon-link {
-  color: #d9c89f;
+  color: #c5bfae;
   text-decoration: none;
   transition:
     transform 0.25s ease,
@@ -108,12 +122,12 @@ textarea {
 
 .icon-link:hover {
   transform: scale(1.15);
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 .demo-btn {
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   border: none;
   padding: 12px 24px;
   border-radius: 999px;
@@ -124,7 +138,7 @@ textarea {
 }
 
 .demo-btn:hover {
-  background-color: #b58e2c;
+  background-color: #b5683d;
 }
 
 /* Hero Section */
@@ -147,18 +161,18 @@ textarea {
   font-weight: 800;
   margin-bottom: 20px;
   letter-spacing: -1px;
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 .highlight {
   display: inline;
-  color: #d4af37;
+  color: #cf7e53;
 }
 
 .hero-content p {
   font-size: 2rem;
   font-weight: 300;
-  color: #d9c89f;
+  color: #c5bfae;
 }
 
 .hero-image {
@@ -192,8 +206,8 @@ textarea {
 .product-display {
   width: 320px;
   height: 320px;
-  background-color: rgba(248, 231, 194, 0.14);
-  border: 2px solid rgba(212, 175, 55, 0.4);
+  background-color: rgba(32, 28, 25, 0.55);
+  border: 2px solid rgba(207, 126, 83, 0.4);
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -221,20 +235,20 @@ textarea {
 
 .menu-header h2 {
   font-size: 3em;
-  color: #f8e7c2;
+  color: #e8cfad;
   font-weight: 800;
 }
 
 .subtitle {
   font-size: 1.2em;
-  color: #bfb090;
+  color: #ab9f8d;
   font-style: italic;
   margin-top: 10px;
 }
 
 .basket-btn {
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   border: 2px solid transparent;
   padding: 12px 28px;
   border-radius: 999px;
@@ -244,7 +258,7 @@ textarea {
 }
 
 .basket-btn:hover {
-  background-color: #b58e2c;
+  background-color: #b5683d;
   transform: translateY(-2px);
 }
 
@@ -257,8 +271,8 @@ textarea {
 }
 
 .category-btn {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #f3ecd4;
+  background-color: rgba(32, 28, 25, 0.35);
+  color: #f5f1eb;
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 12px 24px;
   border-radius: 999px;
@@ -272,8 +286,8 @@ textarea {
 
 .category-btn:hover,
 .category-btn.active {
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   border-color: transparent;
 }
 
@@ -286,9 +300,9 @@ textarea {
 }
 
 .nav-arrow {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(32, 28, 25, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #f8e7c2;
+  color: #e8cfad;
   cursor: pointer;
   padding: 14px;
   border-radius: 50%;
@@ -298,7 +312,7 @@ textarea {
 
 .nav-arrow:hover {
   transform: scale(1.1);
-  background-color: rgba(212, 175, 55, 0.15);
+  background-color: rgba(207, 126, 83, 0.15);
 }
 
 .products-grid {
@@ -311,8 +325,8 @@ textarea {
 }
 
 .product-card {
-  background-color: rgba(248, 231, 194, 0.14);
-  border: 1px solid rgba(212, 175, 55, 0.18);
+  background-color: rgba(32, 28, 25, 0.55);
+  border: 1px solid rgba(207, 126, 83, 0.2);
   padding: 28px;
   border-radius: 24px;
   text-align: center;
@@ -323,7 +337,7 @@ textarea {
 
 .product-card:hover {
   border-color: rgba(212, 175, 55, 0.8);
-  box-shadow: 0 20px 45px rgba(212, 175, 55, 0.18);
+  box-shadow: 0 20px 45px rgba(207, 126, 83, 0.2);
   transform: translateY(-6px);
 }
 
@@ -335,12 +349,12 @@ textarea {
 .product-card h3 {
   font-size: 1.3em;
   margin-bottom: 8px;
-  color: #f8e7c2;
+  color: #e8cfad;
   font-weight: 700;
 }
 
 .product-desc {
-  color: #d9c89f;
+  color: #c5bfae;
   font-size: 0.95em;
   margin-bottom: 15px;
 }
@@ -357,12 +371,12 @@ textarea {
 .price {
   font-size: 1.4em;
   font-weight: 700;
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 .add-btn {
   background-color: transparent;
-  color: #f8e7c2;
+  color: #e8cfad;
   border: 2px solid rgba(248, 231, 194, 0.55);
   padding: 10px 18px;
   border-radius: 999px;
@@ -372,16 +386,16 @@ textarea {
 }
 
 .add-btn:hover {
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   border-color: transparent;
 }
 
 .more-btn {
   display: block;
   margin: 0 auto;
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   border: none;
   padding: 14px 34px;
   border-radius: 999px;
@@ -399,8 +413,8 @@ textarea {
 
 /* New Drink Section */
 .new-drink {
-  background-color: rgba(248, 231, 194, 0.12);
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  background-color: rgba(32, 28, 25, 0.45);
+  border: 1px solid rgba(207, 126, 83, 0.35);
   padding: 60px;
   margin: 80px auto;
   max-width: 1200px;
@@ -416,25 +430,25 @@ textarea {
 
 .new-drink h2 {
   font-size: 4em;
-  color: #f8e7c2;
+  color: #e8cfad;
   margin-bottom: 10px;
   font-weight: 800;
 }
 
 .light {
   font-weight: 300;
-  color: #d9c89f;
+  color: #c5bfae;
 }
 
 .new-drink h3 {
   font-size: 3em;
-  color: #f8e7c2;
+  color: #e8cfad;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .new-description {
-  color: #d9c89f;
+  color: #c5bfae;
   font-size: 1.5em;
   margin-bottom: 30px;
 }
@@ -455,18 +469,18 @@ textarea {
   display: block;
   font-size: 2em;
   font-weight: 700;
-  color: #d4af37;
+  color: #cf7e53;
   margin-bottom: 10px;
 }
 
 .feature-item p {
-  color: #f3ecd4;
+  color: #f5f1eb;
   font-size: 1em;
   font-weight: 500;
 }
 
 .feature-detail {
-  color: #bfb090;
+  color: #ab9f8d;
   font-size: 0.9em;
   font-weight: 400;
 }
@@ -480,12 +494,12 @@ textarea {
 .current-price {
   font-size: 2.5em;
   font-weight: 600;
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 .old-price {
   font-size: 2em;
-  color: #d9c89f;
+  color: #c5bfae;
   text-decoration: line-through;
 }
 
@@ -545,8 +559,8 @@ textarea {
 
 .contact-card,
 .contact-form {
-  background-color: rgba(248, 231, 194, 0.08);
-  border: 1px solid rgba(212, 175, 55, 0.18);
+  background-color: rgba(32, 28, 25, 0.35);
+  border: 1px solid rgba(207, 126, 83, 0.2);
   border-radius: 28px;
   padding: 32px;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.1);
@@ -556,13 +570,13 @@ textarea {
 .contact-form h3 {
   font-size: 2em;
   margin-bottom: 18px;
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 .contact-card p,
 .contact-info p,
 .contact-form .form-group label {
-  color: #d9c89f;
+  color: #c5bfae;
 }
 
 .contact-info {
@@ -577,7 +591,7 @@ textarea {
 
 .social-panel p {
   margin-bottom: 16px;
-  color: #f8e7c2;
+  color: #e8cfad;
   font-weight: 700;
 }
 
@@ -621,15 +635,15 @@ textarea {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #f8e7c2;
+  background-color: rgba(32, 28, 25, 0.35);
+  color: #e8cfad;
   font-size: 0.95em;
 }
 
 .social-btn:hover {
   transform: translateY(-2px);
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
 }
 
 .social-link {
@@ -650,12 +664,12 @@ textarea {
   flex-direction: column;
   gap: 18px;
   background-color: rgba(11, 18, 32, 0.95);
-  border-color: rgba(212, 175, 55, 0.25);
+  border-color: rgba(207, 126, 83, 0.25);
 }
 
 .contact-form input,
 .contact-form textarea {
-  background-color: rgba(248, 231, 194, 0.04);
+  background-color: rgba(32, 28, 25, 0.15);
 }
 
 .social-modal-content {
@@ -676,7 +690,7 @@ textarea {
 .social-link.active {
   background-color: rgba(248, 231, 194, 0.18);
   border-color: rgba(248, 231, 194, 0.4);
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 .menu-options-section,
@@ -689,7 +703,7 @@ textarea {
 .menu-hero {
   padding: 100px 20px 60px;
   background: linear-gradient(135deg, #0c1224 0%, #171f36 100%);
-  color: #f8e7c2;
+  color: #e8cfad;
   text-align: center;
 }
 
@@ -706,7 +720,7 @@ textarea {
 
 .menu-hero p {
   font-size: 1.1em;
-  color: #d9c89f;
+  color: #c5bfae;
   line-height: 1.8;
 }
 
@@ -716,12 +730,12 @@ textarea {
 
 .section-header h2 {
   font-size: 2.8em;
-  color: #f8e7c2;
+  color: #e8cfad;
   margin-bottom: 12px;
 }
 
 .section-header p {
-  color: #d9c89f;
+  color: #c5bfae;
   max-width: 760px;
   line-height: 1.75;
 }
@@ -738,8 +752,8 @@ textarea {
 }
 
 .tab-btn {
-  background-color: rgba(255, 255, 255, 0.08);
-  color: #f8e7c2;
+  background-color: rgba(32, 28, 25, 0.35);
+  color: #e8cfad;
   border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 12px 20px;
   border-radius: 999px;
@@ -750,8 +764,8 @@ textarea {
 
 .tab-btn.active,
 .tab-btn:hover {
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   border-color: transparent;
 }
 
@@ -764,8 +778,8 @@ textarea {
 
 .menu-option-card,
 .delivery-card {
-  background-color: rgba(248, 231, 194, 0.08);
-  border: 1px solid rgba(212, 175, 55, 0.18);
+  background-color: rgba(32, 28, 25, 0.35);
+  border: 1px solid rgba(207, 126, 83, 0.2);
   border-radius: 22px;
   padding: 28px;
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.1);
@@ -783,8 +797,8 @@ textarea {
 }
 
 .item-tag {
-  background-color: rgba(212, 175, 55, 0.15);
-  color: #f8e7c2;
+  background-color: rgba(207, 126, 83, 0.15);
+  color: #e8cfad;
   font-size: 0.85em;
   font-weight: 700;
   padding: 8px 12px;
@@ -792,7 +806,7 @@ textarea {
 }
 
 .menu-card-copy {
-  color: #d9c89f;
+  color: #c5bfae;
   margin-bottom: 20px;
   line-height: 1.8;
 }
@@ -807,14 +821,14 @@ textarea {
 .item-price {
   font-size: 1.4em;
   font-weight: 700;
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 .menu-detail-btn,
 .delivery-detail-btn,
 .external-btn {
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   border: none;
   padding: 12px 18px;
   border-radius: 999px;
@@ -826,7 +840,7 @@ textarea {
 .menu-detail-btn:hover,
 .delivery-detail-btn:hover,
 .external-btn:hover {
-  background-color: #b58e2c;
+  background-color: #b5683d;
   transform: translateY(-1px);
 }
 
@@ -840,7 +854,7 @@ textarea {
 }
 
 .delivery-card p {
-  color: #d9c89f;
+  color: #c5bfae;
   margin-bottom: 20px;
   line-height: 1.75;
 }
@@ -877,17 +891,17 @@ textarea {
 
 /* Footer */
 .footer {
-  background-color: #090d18;
-  color: #f8e7c2;
+  background-color: #080706;
+  color: #e8cfad;
   text-align: center;
   padding: 40px;
   margin-top: 40px;
-  border-top: 1px solid rgba(212, 175, 55, 0.4);
+  border-top: 1px solid rgba(207, 126, 83, 0.4);
 }
 
 .footer p {
   font-size: 1em;
-  color: #d9c89f;
+  color: #c5bfae;
 }
 
 /* Responsive */
@@ -1071,8 +1085,8 @@ textarea {
 }
 
 .modal-content {
-  background-color: #0b1220;
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  background-color: #0b0908;
+  border: 1px solid rgba(207, 126, 83, 0.35);
   border-radius: 16px;
   padding: 40px;
   max-width: 420px;
@@ -1103,7 +1117,7 @@ textarea {
 
 .modal-header h2 {
   font-size: 2em;
-  color: #f8e7c2;
+  color: #e8cfad;
   margin: 0;
 }
 
@@ -1111,7 +1125,7 @@ textarea {
   background: none;
   border: none;
   font-size: 2em;
-  color: #d9c89f;
+  color: #c5bfae;
   cursor: pointer;
   padding: 0;
   width: 30px;
@@ -1123,7 +1137,7 @@ textarea {
 }
 
 .close-btn:hover {
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 /* Gmail Help Modal */
 .gmail-modal-content {
@@ -1131,7 +1145,7 @@ textarea {
 }
 
 .gmail-dialog-body {
-  color: #d9c89f;
+  color: #c5bfae;
   line-height: 1.75;
   display: flex;
   flex-direction: column;
@@ -1149,35 +1163,35 @@ textarea {
   padding: 12px 20px;
   border-radius: 8px;
   border: none;
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   cursor: pointer;
   font-weight: 700;
   transition: all 0.25s ease;
 }
 
 .external-btn:hover {
-  background-color: #b58e2c;
+  background-color: #b5683d;
   transform: translateY(-1px);
 }
 
 .secondary-btn {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #f8e7c2;
-  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #e8cfad;
+  border: 1px solid rgba(207, 126, 83, 0.35);
 }
 
 .secondary-btn:hover {
-  background-color: rgba(212, 175, 55, 0.18);
+  background-color: rgba(207, 126, 83, 0.2);
 }
 
 .gmail-note {
-  color: #bfb090;
+  color: #ab9f8d;
   font-size: 0.95em;
 }
 
 .modal-body {
-  color: #d9c89f;
+  color: #c5bfae;
   line-height: 1.75;
   display: flex;
   flex-direction: column;
@@ -1192,14 +1206,14 @@ textarea {
 }
 
 .info-list li {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: rgba(32, 28, 25, 0.2);
+  border: 1px solid rgba(32, 28, 25, 0.35);
   padding: 16px 18px;
   border-radius: 14px;
 }
 
 .info-list li strong {
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 .modal-body button.external-btn {
@@ -1220,24 +1234,24 @@ textarea {
 }
 
 .form-group label {
-  color: #f8e7c2;
+  color: #e8cfad;
   font-weight: 600;
   font-size: 0.95em;
 }
 
 .form-group input {
   padding: 12px 16px;
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(207, 126, 83, 0.3);
   border-radius: 8px;
-  background-color: rgba(248, 231, 194, 0.05);
-  color: #f3ecd4;
+  background-color: rgba(32, 28, 25, 0.2);
+  color: #f5f1eb;
   font-size: 0.95em;
   transition: all 0.25s ease;
 }
 
 .form-group input:focus {
   outline: none;
-  border-color: #d4af37;
+  border-color: #cf7e53;
   background-color: rgba(212, 175, 55, 0.1);
   box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
 }
@@ -1257,7 +1271,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #d9c89f;
+  color: #c5bfae;
   cursor: pointer;
   user-select: none;
 }
@@ -1266,24 +1280,24 @@ textarea {
   width: 16px;
   height: 16px;
   cursor: pointer;
-  accent-color: #d4af37;
+  accent-color: #cf7e53;
 }
 
 .forgot-password {
-  color: #d4af37;
+  color: #cf7e53;
   text-decoration: none;
   transition: color 0.25s ease;
 }
 
 .forgot-password:hover {
-  color: #f8e7c2;
+  color: #e8cfad;
   text-decoration: underline;
 }
 
 .login-btn {
   padding: 14px;
-  background-color: #d4af37;
-  color: #0b1220;
+  background-color: #cf7e53;
+  color: #0b0908;
   border: none;
   border-radius: 8px;
   font-size: 1em;
@@ -1295,9 +1309,9 @@ textarea {
 }
 
 .login-btn:hover {
-  background-color: #b58e2c;
+  background-color: #b5683d;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 20px rgba(207, 126, 83, 0.3);
 }
 
 .login-btn:active {
@@ -1306,19 +1320,19 @@ textarea {
 
 .signup-text {
   text-align: center;
-  color: #d9c89f;
+  color: #c5bfae;
   margin-top: 15px;
 }
 
 .signup-link {
-  color: #d4af37;
+  color: #cf7e53;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.25s ease;
 }
 
 .signup-link:hover {
-  color: #f8e7c2;
+  color: #e8cfad;
 }
 
 @media (max-width: 480px) {

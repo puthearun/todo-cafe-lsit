@@ -1,15 +1,15 @@
 const products = [
-  { id: "espresso", name: "Espresso", price: 2.5, type: "Classic Coffee" },
-  { id: "americano", name: "Americano", price: 3.0, type: "Classic Coffee" },
-  { id: "latte", name: "Latte", price: 4.0, type: "Milk-Based Coffee" },
-  { id: "macchiato", name: "Macchiato", price: 3.5, type: "Specialty Coffee" },
+  { id: "espresso", name: "Caffè Americano", price: 3.45, type: "Classic Espresso" },
+  { id: "americano", name: "Vanilla Sweet Cream Cold Brew", price: 4.75, type: "Cold Brew & Iced" },
+  { id: "latte", name: "Caramel Macchiato", price: 5.15, type: "Milk-Based Sweet" },
+  { id: "macchiato", name: "Matcha Green Tea Frappuccino", price: 5.25, type: "Specialty Frappuccino" },
   {
     id: "cappuccino",
-    name: "Cappuccino",
-    price: 4.5,
-    type: "Milk-Based Coffee",
+    name: "Signature Flat White",
+    price: 4.95,
+    type: "Classic Espresso",
   },
-  { id: "mocha", name: "Mocha", price: 4.5, type: "Specialty Coffee" },
+  { id: "mocha", name: "Caffè Mocha", price: 4.95, type: "Milk-Based Sweet" },
 ];
 
 const clients = [

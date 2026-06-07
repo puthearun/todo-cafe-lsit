@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RM CAFE - Admin Dashboard</title>
+    <title>Starbucks Partner Hub - Store Administration</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../CSS/dashboard.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
   <body>
     <!-- Navigation -->
     <header class="navbar">
       <div class="nav-container">
         <div class="logo">
-          <h1>☕ RM CAFE</h1>
+          <h1>☕ RMCOFFEE Company</h1>
         </div>
         <nav class="nav-menu"></nav>
         <div class="user-info">
@@ -32,17 +32,17 @@
       <aside class="sidebar">
         <nav class="sidebar-menu">
           <button class="menu-btn active" data-section="overview">
-            📊 Overview
+            📊 Store Overview
           </button>
-          <button class="menu-btn" data-section="products">☕ Products</button>
+          <button class="menu-btn" data-section="products">☕ Beverages</button>
           <button class="menu-btn" data-section="menuoptions">
-            🍽 Menu Options
+            🍽 Fulfillment Menu
           </button>
-          <button class="menu-btn" data-section="clients">👥 Clients</button>
-          <button class="menu-btn" data-section="orders">📦 Orders</button>
-          <button class="menu-btn" data-section="sales">💰 Sales</button>
+          <button class="menu-btn" data-section="clients">👥 Customers</button>
+          <button class="menu-btn" data-section="orders">📦 Live Orders</button>
+          <button class="menu-btn" data-section="sales">💰 Sales Reports</button>
           <button class="menu-btn" data-section="analytics">
-            📈 Analytics
+            📈 Store Analytics
           </button>
         </nav>
       </aside>
@@ -50,12 +50,12 @@
       <main class="dashboard-main">
         <!-- Overview Section -->
         <section id="overview" class="dashboard-section active">
-          <h1>Dashboard Overview</h1>
+          <h1>Partner Portal Overview</h1>
           <div class="stats-grid">
             <div class="stat-box">
-              <h3>Total Products</h3>
+              <h3>Core Beverages</h3>
               <p class="stat-number">6</p>
-              <p class="stat-label">Coffee varieties</p>
+              <p class="stat-label">Handcrafted recipes</p>
             </div>
             <div class="stat-box">
               <h3>Total Sales</h3>
@@ -65,18 +65,18 @@
             <div class="stat-box">
               <h3>Total Orders</h3>
               <p class="stat-number">324</p>
-              <p class="stat-label">Completed orders</p>
+              <p class="stat-label">Completed store transactions</p>
             </div>
             <div class="stat-box">
               <h3>Avg. Order Value</h3>
-              <p class="stat-number">$3.86</p>
-              <p class="stat-label">Per transaction</p>
+              <p class="stat-number">$4.86</p>
+              <p class="stat-label">Per customer ticket</p>
             </div>
           </div>
 
           <div class="content-row">
             <div class="chart-box">
-              <h3>Monthly Revenue</h3>
+              <h3>Monthly Store Revenue</h3>
               <div class="chart">
                 <div class="bar" style="height: 40%">Jan</div>
                 <div class="bar" style="height: 60%">Feb</div>
@@ -88,22 +88,22 @@
             </div>
 
             <div class="chart-box">
-              <h3>Top Products</h3>
+              <h3>Top Selling Handcrafts</h3>
               <table class="simple-table">
                 <tr>
-                  <td>Cappuccino</td>
+                  <td>Matcha Green Tea Frappuccino</td>
                   <td class="number">245 sold</td>
                 </tr>
                 <tr>
-                  <td>Latte</td>
+                  <td>Caramel Macchiato</td>
                   <td class="number">198 sold</td>
                 </tr>
                 <tr>
-                  <td>Americano</td>
+                  <td>Vanilla Sweet Cream Cold Brew</td>
                   <td class="number">156 sold</td>
                 </tr>
                 <tr>
-                  <td>Espresso</td>
+                  <td>Signature Flat White</td>
                   <td class="number">134 sold</td>
                 </tr>
               </table>
@@ -113,77 +113,77 @@
 
         <!-- Products Section -->
         <section id="products" class="dashboard-section">
-          <h1>Product Management</h1>
+          <h1>Beverage Management</h1>
           <button class="add-btn" id="add-product-btn">
-            + Add New Product
+            + Add New Beverage
           </button>
 
           <table class="data-table">
             <thead>
               <tr>
-                <th>Product Name</th>
-                <th>Type</th>
-                <th>Price</th>
-                <th>Stock</th>
+                <th>Beverage Name</th>
+                <th>Category</th>
+                <th>Base Price</th>
+                <th>Availability</th>
                 <th>Actions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Espresso</td>
-                <td>Classic Coffee</td>
-                <td>$2.50</td>
-                <td>145</td>
+                <td>Caffè Americano</td>
+                <td>Classic Espresso</td>
+                <td>$3.45</td>
+                <td>Available (145)</td>
                 <td>
                   <button class="action-btn edit">Edit</button>
                   <button class="action-btn delete">Delete</button>
                 </td>
               </tr>
               <tr>
-                <td>Americano</td>
-                <td>Classic Coffee</td>
-                <td>$3.00</td>
-                <td>132</td>
+                <td>Vanilla Sweet Cream Cold Brew</td>
+                <td>Cold Brew & Iced</td>
+                <td>$4.75</td>
+                <td>Available (132)</td>
                 <td>
                   <button class="action-btn edit">Edit</button>
                   <button class="action-btn delete">Delete</button>
                 </td>
               </tr>
               <tr>
-                <td>Latte</td>
-                <td>Milk-Based Coffee</td>
-                <td>$4.00</td>
-                <td>98</td>
+                <td>Caramel Macchiato</td>
+                <td>Milk-Based Sweet</td>
+                <td>$5.15</td>
+                <td>Available (98)</td>
                 <td>
                   <button class="action-btn edit">Edit</button>
                   <button class="action-btn delete">Delete</button>
                 </td>
               </tr>
               <tr>
-                <td>Cappuccino</td>
-                <td>Milk-Based Coffee</td>
-                <td>$4.50</td>
-                <td>156</td>
+                <td>Signature Flat White</td>
+                <td>Classic Espresso</td>
+                <td>$4.95</td>
+                <td>Available (156)</td>
                 <td>
                   <button class="action-btn edit">Edit</button>
                   <button class="action-btn delete">Delete</button>
                 </td>
               </tr>
               <tr>
-                <td>Mocha</td>
-                <td>Specialty Coffee</td>
-                <td>$4.50</td>
-                <td>87</td>
+                <td>Caffè Mocha</td>
+                <td>Milk-Based Sweet</td>
+                <td>$4.95</td>
+                <td>Available (87)</td>
                 <td>
                   <button class="action-btn edit">Edit</button>
                   <button class="action-btn delete">Delete</button>
                 </td>
               </tr>
               <tr>
-                <td>Macchiato</td>
-                <td>Specialty Coffee</td>
-                <td>$3.50</td>
-                <td>112</td>
+                <td>Matcha Green Tea Frappuccino</td>
+                <td>Specialty Frappuccino</td>
+                <td>$5.25</td>
+                <td>Available (112)</td>
                 <td>
                   <button class="action-btn edit">Edit</button>
                   <button class="action-btn delete">Delete</button>
@@ -193,27 +193,28 @@
           </table>
         </section>
 
+        <!-- Fulfillment Menu Section -->
         <section id="menuoptions" class="dashboard-section">
           <div class="section-header">
-            <h1>Menu Options</h1>
+            <h1>Fulfillment Menu Configuration</h1>
             <p class="section-description">
-              Browse all the cafe menu options from the dashboard and open item
-              details.
+              Verify drink catalog pricing and configurations as represented on the digital menus.
             </p>
           </div>
           <div class="menu-grid" id="menu-options-grid"></div>
         </section>
 
+        <!-- Clients Section -->
         <section id="clients" class="dashboard-section">
-          <h1>Client Management</h1>
+          <h1>Customer Management</h1>
           <div class="content-row">
             <div class="chart-box">
-              <h3>Client List</h3>
-              <button class="add-btn" id="add-client-btn">+ Add Client</button>
+              <h3>Active Rewards Members</h3>
+              <button class="add-btn" id="add-client-btn">+ Add Member</button>
               <table class="data-table">
                 <thead>
                   <tr>
-                    <th>Client ID</th>
+                    <th>Member ID</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
@@ -224,14 +225,14 @@
               </table>
             </div>
             <div class="chart-box">
-              <h3>Place New Order</h3>
+              <h3>Place App Order (POS Simulation)</h3>
               <form id="new-order-form">
                 <div class="form-row">
-                  <label for="order-client-select">Client</label>
+                  <label for="order-client-select">Rewards Member</label>
                   <select id="order-client-select"></select>
                 </div>
                 <div class="form-row">
-                  <label for="order-product-select">Product</label>
+                  <label for="order-product-select">Beverage</label>
                   <select id="order-product-select"></select>
                 </div>
                 <div class="form-row">
@@ -251,16 +252,16 @@
 
         <!-- Orders Section -->
         <section id="orders" class="dashboard-section">
-          <h1>Orders Management</h1>
+          <h1>Live Orders Queue</h1>
 
           <table class="data-table">
             <thead>
               <tr>
                 <th>Order ID</th>
-                <th>Customer</th>
-                <th>Items</th>
-                <th>Total</th>
-                <th>Status</th>
+                <th>Rewards Customer</th>
+                <th>Beverages</th>
+                <th>Total Bill</th>
+                <th>Fulfillment Status</th>
                 <th>Date</th>
                 <th>Actions</th>
               </tr>
@@ -273,15 +274,15 @@
         <div id="menuModal" class="modal dashboard-modal">
           <div class="modal-content">
             <div class="modal-header">
-              <h2 id="menuModalTitle">Menu Item Details</h2>
+              <h2 id="menuModalTitle">Beverage Details</h2>
               <button class="close-btn" id="menuModalClose">&times;</button>
             </div>
             <div class="menu-modal-body">
-              <p id="menuModalType"></p>
-              <p id="menuModalPrice"></p>
-              <p id="menuModalDescription"></p>
-              <button class="external-btn" id="orderMenuItemBtn">
-                Add to Order
+              <p id="menuModalType" style="font-weight: 700; color: #006241;"></p>
+              <p id="menuModalPrice" style="font-size: 1.2em; font-weight: 700;"></p>
+              <p id="menuModalDescription" style="line-height: 1.6; color: #5c5c5c;"></p>
+              <button class="external-btn" id="orderMenuItemBtn" style="border: none; width: 100%;">
+                Log Order Transaction
               </button>
             </div>
           </div>
@@ -289,31 +290,31 @@
 
         <!-- Sales Section -->
         <section id="sales" class="dashboard-section">
-          <h1>Sales Analysis</h1>
+          <h1>Beverage Sales Analysis</h1>
 
           <div class="sales-summary">
             <div class="summary-box">
-              <h3>Today's Sales</h3>
+              <h3>Today's Store Sales</h3>
               <p class="big-number">$342.50</p>
-              <p class="small-text">89 orders</p>
+              <p class="small-text">89 mobile transactions</p>
             </div>
             <div class="summary-box">
               <h3>This Week</h3>
               <p class="big-number">$2,145</p>
-              <p class="small-text">512 orders</p>
+              <p class="small-text">512 mobile transactions</p>
             </div>
             <div class="summary-box">
               <h3>This Month</h3>
               <p class="big-number">$8,950</p>
-              <p class="small-text">2,247 orders</p>
+              <p class="small-text">2,247 mobile transactions</p>
             </div>
           </div>
 
           <div class="chart-box">
-            <h3>Sales by Category</h3>
+            <h3>Sales Distribution by Beverage Type</h3>
             <table class="simple-table">
               <tr>
-                <td>Classic Coffee</td>
+                <td>Classic Espresso</td>
                 <td>
                   <div class="progress-bar">
                     <div class="progress" style="width: 35%"></div>
@@ -322,7 +323,7 @@
                 <td class="number">35%</td>
               </tr>
               <tr>
-                <td>Milk-Based Coffee</td>
+                <td>Milk-Based Sweet</td>
                 <td>
                   <div class="progress-bar">
                     <div class="progress" style="width: 40%"></div>
@@ -331,7 +332,7 @@
                 <td class="number">40%</td>
               </tr>
               <tr>
-                <td>Specialty Coffee</td>
+                <td>Cold Brew & Iced</td>
                 <td>
                   <div class="progress-bar">
                     <div class="progress" style="width: 15%"></div>
@@ -340,7 +341,7 @@
                 <td class="number">15%</td>
               </tr>
               <tr>
-                <td>Sweet Coffee</td>
+                <td>Specialty Frappuccino</td>
                 <td>
                   <div class="progress-bar">
                     <div class="progress" style="width: 10%"></div>
@@ -354,61 +355,61 @@
 
         <!-- Analytics Section -->
         <section id="analytics" class="dashboard-section">
-          <h1>Analytics & Reports</h1>
+          <h1>App Analytics & Growth Reports</h1>
 
           <div class="analytics-grid">
             <div class="analytics-card">
-              <h3>Customer Growth</h3>
+              <h3>Mobile App Growth</h3>
               <p class="metric">+23%</p>
               <p class="description">Compared to last month</p>
             </div>
             <div class="analytics-card">
-              <h3>Repeat Customers</h3>
+              <h3>Repeat Mobile Orders</h3>
               <p class="metric">68%</p>
-              <p class="description">Of total customer base</p>
+              <p class="description">Of active customer base</p>
             </div>
             <div class="analytics-card">
-              <h3>Avg Daily Orders</h3>
+              <h3>Avg Daily App Tickets</h3>
               <p class="metric">74.9</p>
-              <p class="description">Orders per day</p>
+              <p class="description">Beverage pickups per day</p>
             </div>
             <div class="analytics-card">
-              <h3>Customer Satisfaction</h3>
-              <p class="metric">4.8★</p>
-              <p class="description">Out of 5 stars</p>
+              <h3>Beverage Quality Score</h3>
+              <p class="metric">4.9★</p>
+              <p class="description">Based on app satisfaction surveys</p>
             </div>
           </div>
 
           <div class="report-section">
-            <h3>Popular Hours</h3>
+            <h3>Store Mobile Order Peak Hours</h3>
             <div class="timeline">
               <div class="time-slot">
                 <span class="time">8 AM - 10 AM</span>
                 <div class="bar" style="width: 85%"></div>
-                <span class="count">85%</span>
+                <span class="count">85% peak</span>
               </div>
               <div class="time-slot">
                 <span class="time">12 PM - 2 PM</span>
                 <div class="bar" style="width: 92%"></div>
-                <span class="count">92%</span>
+                <span class="count">92% peak</span>
               </div>
               <div class="time-slot">
                 <span class="time">3 PM - 5 PM</span>
                 <div class="bar" style="width: 70%"></div>
-                <span class="count">70%</span>
+                <span class="count">70% peak</span>
               </div>
               <div class="time-slot">
                 <span class="time">6 PM - 8 PM</span>
                 <div class="bar" style="width: 65%"></div>
-                <span class="count">65%</span>
+                <span class="count">65% peak</span>
               </div>
             </div>
           </div>
         </section>
       </main>
     </div>
-    <a href="index.html" class="fixed-back-btn">← Back to Shop</a>
+    <a href="index.html" class="fixed-back-btn">← Back to Store</a>
 
-    <script src="../JS/dashboard.js"></script>
+    <script src="../js/dashboard.js"></script>
   </body>
 </html>

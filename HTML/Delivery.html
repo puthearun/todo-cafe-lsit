@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RM CAFE - Delivery</title>
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <title>RMCOFFEE Company - RMCOFFEE Delivers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header class="navbar">
       <div class="nav-container">
         <div class="logo">
-          <h1>☕ RM CAFE</h1>
+          <img
+            src="../images/logo - Cafe Project.png"
+            alt="Starbucks logo"
+            class="logo-image"
+          />
+          <h1>RMCOFFEE</h1>
         </div>
         <nav class="nav-menu">
           <a href="index.html" class="nav-link">Home</a>
@@ -20,23 +31,25 @@
         <div class="nav-icons">
           <a href="dashboard.html" class="icon-link">📊</a>
         </div>
-        <a href="index.html" class="demo-btn">Sign In</a>
+        <div class="nav-actions">
+          <a href="index.html" class="signin-btn" style="text-decoration: none;">Sign in</a>
+          <a href="index.html" class="join-btn" style="text-decoration: none;">Join now</a>
+        </div>
       </div>
     </header>
 
     <section class="menu-hero">
       <div class="hero-content">
-        <h2>Delivery Options</h2>
-        <p>Find the right way to receive your order from RM CAFE.</p>
+        <h2>Delivery & Collection</h2>
+        <p>Find the most convenient way to receive your Starbucks handcrafts—from rapid contactless delivery to seamless mobile collection.</p>
       </div>
     </section>
 
     <section class="menu-options-section">
       <div class="section-header">
-        <h2>Delivery Choices</h2>
+        <h2>Fulfillment Channels</h2>
         <p>
-          Choose a delivery style that matches your pace and get extra details
-          in the dialog.
+          Choose a delivery style that fits your workflow. Starbucks partners with top delivery networks and provides advanced in-app order-ahead solutions.
         </p>
       </div>
 
@@ -50,12 +63,11 @@
       <div class="menu-options-grid">
         <article class="delivery-card">
           <div class="menu-card-head">
-            <h3>Home Delivery</h3>
-            <span class="item-tag">Quick</span>
+            <h3>RMCOFFEE Delivers</h3>
+            <span class="item-tag">Quick Delivery</span>
           </div>
           <p class="menu-card-copy">
-            Get your coffee delivered fast with contactless drop-off and
-            tracking.
+            Get your hot cold brews, lattes, and fresh bakery items delivered directly to your doorstep with insulated, spill-proof custom packaging.
           </p>
           <div class="menu-card-meta">
             <button class="delivery-detail-btn" data-delivery-id="homeDelivery">
@@ -66,11 +78,11 @@
 
         <article class="delivery-card">
           <div class="menu-card-head">
-            <h3>Store Pickup</h3>
-            <span class="item-tag">Convenient</span>
+            <h3>Mobile Order & Pay</h3>
+            <span class="item-tag">Convenient Pickup</span>
           </div>
           <p class="menu-card-copy">
-            Order ahead and grab your drinks from the cafe counter in minutes.
+            Skip the register queue! Order through our smartphone app, walk straight into the store, and grab your fresh cup from the counter.
           </p>
           <div class="menu-card-meta">
             <button class="delivery-detail-btn" data-delivery-id="storePickup">
@@ -81,11 +93,11 @@
 
         <article class="delivery-card">
           <div class="menu-card-head">
-            <h3>Scheduled Delivery</h3>
-            <span class="item-tag">Planned</span>
+            <h3>Office Catering</h3>
+            <span class="item-tag">Scheduled Traveler</span>
           </div>
           <p class="menu-card-copy">
-            Reserve a delivery window up to 24 hours ahead for perfect timing.
+            Reserve multiple RMCOFFEE Travelers (serves 8-12 each) alongside assorted breakfast pastries, delivered hot for your corporate meetings.
           </p>
           <div class="menu-card-meta">
             <button
@@ -106,20 +118,20 @@
           <button class="close-btn" data-close-modal>&times;</button>
         </div>
         <div class="menu-modal-body">
-          <p id="deliveryModalTiming"></p>
-          <p id="deliveryModalDescription"></p>
-          <ul id="deliveryModalBenefits"></ul>
-          <button class="external-btn" id="deliveryModalActionBtn">
-            Confirm Delivery Choice
+          <p id="deliveryModalTiming" style="font-weight: 700; color: #006241;"></p>
+          <p id="deliveryModalDescription" style="line-height: 1.6; margin: 10px 0; color: #5c5c5c;"></p>
+          <ul id="deliveryModalBenefits" class="info-list" style="margin-bottom: 20px;"></ul>
+          <button class="external-btn" id="deliveryModalActionBtn" style="width: 100%; border: none;">
+            Confirm Selection
           </button>
         </div>
       </div>
     </div>
 
     <footer class="footer">
-      <p>&copy; 2026 RM CAFE. All rights reserved.</p>
+      <p>&copy; 2026 RMCOFFEE Company. All rights reserved.</p>
     </footer>
 
-    <script src="../JS/menuDelivery.js"></script>
+    <script src="../js/menu-delivery.js"></script>
   </body>
 </html>

@@ -3,14 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RM CAFE - Menu</title>
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <title>RMCOFFEE COMPANY - Handcrafted Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <header class="navbar">
       <div class="nav-container">
         <div class="logo">
-          <h1>☕ RM CAFE</h1>
+          <img
+            src="../images/logo - Cafe Project.png"
+            alt="Starbucks logo"
+            class="logo-image"
+          />
+          <h1>RMCOFFEE COMPANY</h1>
         </div>
         <nav class="nav-menu">
           <a href="index.html" class="nav-link">Home</a>
@@ -20,44 +31,47 @@
         <div class="nav-icons">
           <a href="dashboard.html" class="icon-link">📊</a>
         </div>
-        <a href="index.html" class="demo-btn">Sign In</a>
+        <div class="nav-actions">
+          <a href="index.html" class="signin-btn" style="text-decoration: none;">Sign in</a>
+          <a href="index.html" class="join-btn" style="text-decoration: none;">Join now</a>
+        </div>
       </div>
     </header>
 
     <section class="menu-hero">
       <div class="hero-content">
-        <h2>Our Menu</h2>
-        <p>Explore all coffee categories and open item details in a dialog.</p>
+        <h2>Menu Favorites</h2>
+        <p>Explore our beautiful collections of coffees, blended Frappuccinos, cold brews, and customized espresso options.</p>
       </div>
     </section>
 
     <section class="menu-options-section">
       <div class="section-header">
-        <h2>Menu Options</h2>
+        <h2>Menu Offerings</h2>
         <p>
-          Discover our full line-up of coffees with easy detail dialogs and a
-          clean ordering flow.
+          Discover your perfect beverage combination. Fully customize milk, syrups, espresso shots, and toppings in the detail dialog.
         </p>
       </div>
 
       <div class="menu-category-tabs">
         <button class="tab-btn active">All</button>
-        <button class="tab-btn">Classic</button>
-        <button class="tab-btn">Milk-Based</button>
-        <button class="tab-btn">Specialty</button>
+        <button class="tab-btn">Classic Espresso</button>
+        <button class="tab-btn">Milk-Based Sweet</button>
+        <button class="tab-btn">Cold Brew & Iced</button>
+        <button class="tab-btn">Specialty Frappuccino</button>
       </div>
 
       <div class="menu-options-grid">
         <article class="menu-option-card">
           <div class="menu-card-head">
-            <h3>Espresso</h3>
-            <span class="item-tag">Classic</span>
+            <h3>Caffè Americano</h3>
+            <span class="item-tag">Classic Espresso</span>
           </div>
           <p class="menu-card-copy">
-            Bold, concentrated flavor with rich crema for a true coffee purist.
+            Rich, full-bodied espresso shots topped with hot water to produce a light layer of crema.
           </p>
           <div class="menu-card-meta">
-            <span class="item-price">$2.50</span>
+            <span class="item-price">$3.45</span>
             <button class="menu-detail-btn" data-item-id="espresso">
               View Details
             </button>
@@ -66,14 +80,14 @@
 
         <article class="menu-option-card">
           <div class="menu-card-head">
-            <h3>Americano</h3>
-            <span class="item-tag">Classic</span>
+            <h3>Vanilla Sweet Cream Cold Brew</h3>
+            <span class="item-tag">Cold Brew & Iced</span>
           </div>
           <p class="menu-card-copy">
-            Smooth espresso blended with hot water for a longer, balanced drink.
+            Slow-steeped Starbucks Cold Brew sweetened with vanilla syrup and topped with vanilla sweet cream.
           </p>
           <div class="menu-card-meta">
-            <span class="item-price">$3.00</span>
+            <span class="item-price">$4.75</span>
             <button class="menu-detail-btn" data-item-id="americano">
               View Details
             </button>
@@ -82,14 +96,14 @@
 
         <article class="menu-option-card">
           <div class="menu-card-head">
-            <h3>Latte</h3>
-            <span class="item-tag">Milk-Based</span>
+            <h3>Caramel Macchiato</h3>
+            <span class="item-tag">Milk-Based Sweet</span>
           </div>
           <p class="menu-card-copy">
-            Creamy espresso with steamed milk and soft foam for a mellow finish.
+            Freshly steamed milk with vanilla-flavored syrup, marked with espresso and drizzled with caramel sauce.
           </p>
           <div class="menu-card-meta">
-            <span class="item-price">$4.00</span>
+            <span class="item-price">$5.15</span>
             <button class="menu-detail-btn" data-item-id="latte">
               View Details
             </button>
@@ -98,15 +112,14 @@
 
         <article class="menu-option-card">
           <div class="menu-card-head">
-            <h3>Cappuccino</h3>
-            <span class="item-tag">Milk-Based</span>
+            <h3>Signature Flat White</h3>
+            <span class="item-tag">Classic Espresso</span>
           </div>
           <p class="menu-card-copy">
-            Perfect foam and rich espresso combine for a classic café
-            experience.
+            Smooth ristretto shots of espresso blended with perfectly steamed whole milk for a velvety finish.
           </p>
           <div class="menu-card-meta">
-            <span class="item-price">$4.50</span>
+            <span class="item-price">$4.95</span>
             <button class="menu-detail-btn" data-item-id="cappuccino">
               View Details
             </button>
@@ -115,14 +128,14 @@
 
         <article class="menu-option-card">
           <div class="menu-card-head">
-            <h3>Mocha</h3>
-            <span class="item-tag">Specialty</span>
+            <h3>Caffè Mocha</h3>
+            <span class="item-tag">Milk-Based Sweet</span>
           </div>
           <p class="menu-card-copy">
-            A decadent blend of espresso and chocolate with a creamy finish.
+            Full-bodied espresso combined with bittersweet mocha sauce, steamed milk, and whipped cream.
           </p>
           <div class="menu-card-meta">
-            <span class="item-price">$4.50</span>
+            <span class="item-price">$4.95</span>
             <button class="menu-detail-btn" data-item-id="mocha">
               View Details
             </button>
@@ -131,14 +144,14 @@
 
         <article class="menu-option-card">
           <div class="menu-card-head">
-            <h3>Macchiato</h3>
-            <span class="item-tag">Specialty</span>
+            <h3>Matcha Green Tea Frappuccino</h3>
+            <span class="item-tag">Specialty Frappuccino</span>
           </div>
           <p class="menu-card-copy">
-            A strong espresso accentuated with a touch of foamed milk.
+            Premium Uji matcha green tea, milk, and ice blended together, finished with sweetened whipped cream.
           </p>
           <div class="menu-card-meta">
-            <span class="item-price">$3.50</span>
+            <span class="item-price">$5.25</span>
             <button class="menu-detail-btn" data-item-id="macchiato">
               View Details
             </button>
@@ -154,11 +167,11 @@
           <button class="close-btn" data-close-modal>&times;</button>
         </div>
         <div class="menu-modal-body">
-          <p id="menuModalType"></p>
-          <p id="menuModalPrice"></p>
-          <p id="menuModalDescription"></p>
-          <ul id="menuModalFeatures"></ul>
-          <button class="external-btn" id="menuModalActionBtn">
+          <p id="menuModalType" style="font-weight: 700; color: #006241;"></p>
+          <p id="menuModalPrice" style="font-size: 1.25em; font-weight: 700; margin: 5px 0;"></p>
+          <p id="menuModalDescription" style="line-height: 1.6; margin-bottom: 15px; color: #5c5c5c;"></p>
+          <ul id="menuModalFeatures" class="info-list" style="margin-bottom: 20px;"></ul>
+          <button class="external-btn" id="menuModalActionBtn" style="width: 100%; border: none;">
             Add to Order
           </button>
         </div>
@@ -166,9 +179,9 @@
     </div>
 
     <footer class="footer">
-      <p>&copy; 2026 RM CAFE. All rights reserved.</p>
+      <p>&copy; 2026 RMCOFFEE Company. All rights reserved.</p>
     </footer>
 
-    <script src="../JS/menuDelivery.js"></script>
+    <script src="../js/menu-delivery.js"></script>
   </body>
 </html>

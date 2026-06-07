@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RM Cafe</title>
+    <title>RM Coffee Company</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -16,8 +16,8 @@
       type="image/png"
     />
     <link rel="apple-touch-icon" href="../images/logo - Cafe Project.png" />
-    <meta name="theme-color" content="#0b1220" />
-    <link rel="stylesheet" href="../CSS/styles.css" />
+    <meta name="theme-color" content="#006241" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
     <!-- Navigation Header -->
@@ -26,15 +26,15 @@
         <div class="logo">
           <img
             src="../images/logo - Cafe Project.png"
-            alt="RM Cafe logo"
+            alt="RMCOFFEE COMPANY logo"
             class="logo-image"
           />
-          <h1>RM CAFE</h1>
+          <h1>RMCOFFEE COMPANY</h1>
         </div>
         <nav class="nav-menu">
           <a href="#home" class="nav-link active">Home</a>
           <a href="menu.html" class="nav-link">Menu</a>
-          <a href="#contact" class="nav-link">Contact</a>
+          <a href="delivery.html" class="nav-link">Delivery</a>
           <a href="#" class="nav-link" data-modal-target="aboutModal"
             >About Us</a
           >
@@ -43,23 +43,26 @@
           <a href="dashboard.html" class="icon-link">📊</a>
           <a href="#cart" class="icon-link">🛒</a>
         </div>
-        <button class="demo-btn">Sign In</button>
+        <div class="nav-actions">
+          <button class="signin-btn">Sign in</button>
+          <button class="join-btn">Join now</button>
+        </div>
       </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="hero-content">
-        <h2>ORDER<span class="highlight"> COFFEE</span></h2>
+        <h2>IT'S NOT JUST<br /><span class="highlight">COFFEE</span></h2>
         <p>
-          Welcome Our Sweet Drinks_Enjoy the perfect blend of flavor and your
-          time.
+          It's a moment of connection. Enjoy your favorite handcrafted beverages
+          and delicious fresh bites, delivered to your door or ready for pickup.
         </p>
       </div>
       <div class="hero-image">
         <img
-          src="../images/header-coffee.jpg"
-          alt="Coffee cup and croissants"
+          src="../images/header - cafe.jpg"
+          alt="RMCOFFEE COMPANY iced coffee and fresh pastries"
           class="hero-image-photo"
         />
       </div>
@@ -68,16 +71,17 @@
     <!-- Menu Section -->
     <section id="menu" class="menu-section">
       <div class="menu-header">
-        <h2>Menu</h2>
+        <h2>Menu favorites</h2>
+        <p class="subtitle">Satisfying your coffee cravings since 1971</p>
       </div>
 
       <!-- Categories -->
       <div class="categories">
-        <button class="category-btn active">Iced Coffee</button>
-        <button class="category-btn">Milk-Based Coffee</button>
-        <button class="category-btn">Classic Coffee</button>
-        <button class="category-btn">Specialty Coffee</button>
-        <button class="category-btn">Sweet Coffee</button>
+        <button class="category-btn active">Frappuccino</button>
+        <button class="category-btn">Cold Brews & Iced</button>
+        <button class="category-btn">Classic Espresso</button>
+        <button class="category-btn">Milk-Based Sweet</button>
+        <button class="category-btn">Bakery & Food</button>
       </div>
 
       <!-- Products Grid -->
@@ -87,40 +91,46 @@
         <div class="products-grid">
           <div class="product-card">
             <div class="product-image">☕</div>
-            <h3>Espresso</h3>
-            <p class="product-desc">Strong black coffee</p>
+            <h3>Caffè Americano</h3>
+            <!-- <p class="product-desc">Rich, full espresso shots & hot water</p> -->
             <div class="product-footer">
-              <span class="price">$2.50</span>
+              <span class="price">$3.45</span>
+              <button class="add-btn">+ Add</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-image">🥤</div>
+            <h3>Vanilla Sweet Cream Cold Brew</h3>
+            <p class="product-desc">
+              Slow-steeped brew topped with sweet cream
+            </p>
+            <div class="product-footer">
+              <span class="price">$4.75</span>
               <button class="add-btn">+ Add</button>
             </div>
           </div>
 
           <div class="product-card">
             <div class="product-image">☕</div>
-            <h3>Americano</h3>
-            <p class="product-desc">Espresso with hot water</p>
+            <h3>Caramel Macchiato</h3>
+            <p class="product-desc">
+              Steamed vanilla milk marked with espresso
+            </p>
             <div class="product-footer">
-              <span class="price">$3.00</span>
+              <span class="price">$5.15</span>
               <button class="add-btn">+ Add</button>
             </div>
           </div>
 
           <div class="product-card">
             <div class="product-image">☕</div>
-            <h3>Latte</h3>
-            <p class="product-desc">Espresso + milk</p>
+            <h3>Cafe Mocha</h3>
+            <p class="product-desc">
+              Bold ristretto shots with velvety microfoam
+            </p>
             <div class="product-footer">
-              <span class="price">$4.00</span>
-              <button class="add-btn">+ Add</button>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">☕</div>
-            <h3>Macchiato</h3>
-            <p class="product-desc">Espresso + milk foam</p>
-            <div class="product-footer">
-              <span class="price">$3.50</span>
+              <span class="price">$4.95</span>
               <button class="add-btn">+ Add</button>
             </div>
           </div>
@@ -129,38 +139,35 @@
         <button class="nav-arrow next">›</button>
       </div>
 
-      <button class="more-btn">More</button>
+      <a
+        href="menu.html"
+        class="more-btn"
+        style="text-align: center; text-decoration: none; display: inline-block"
+        >See Full Menu</a
+      >
     </section>
 
     <!-- New Drink Section -->
     <section class="new-drink">
       <div class="new-drink-content">
-        <h2>New <span class="light">collection</span></h2>
-        <h3>Cappuccino</h3>
-        <p class="new-description">Espresso with steamed milk.</p>
-
-        <!-- <div class="features">
-          <div class="feature-item">
-            <span class="feature-number">4</span>
-            <p>Total<br /><span class="feature-detail">Orders</span></p>
-          </div>
-          <div class="feature-item">
-            <p><span class="feature-detail"></span><br /></p>
-          </div>
-          <div class="feature-item">
-            <span class="feature-number">20%</span>
-            <p><span class="feature-detail">discount</span></p>
-          </div>
-        </div> -->
+        <h2>Seasonal <span class="light">Collection</span></h2>
+        <h3>Matcha Frappuccino</h3>
+        <p class="new-description">
+          Premium sweet Uji matcha blended with milk, ice, and delicious whipped
+          cream.
+        </p>
 
         <div class="new-price">
-          <span class="current-price">$4.50</span>
-          <span class="old-price">$5.60</span>
+          <span class="current-price">$5.25</span>
+          <span class="old-price">$6.00</span>
         </div>
       </div>
       <div class="new-drink-image">
         <div class="product-display-large">
-          <img src="../images/New Collection.jpg" alt="Cappuccino" />
+          <img
+            src="../images/Matcha Latter.jpg"
+            alt="RMCOFFEE COMPANY Matcha Frappuccino"
+          />
         </div>
       </div>
     </section>
@@ -168,26 +175,25 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
       <div class="section-header">
-        <h2>Contact Us</h2>
+        <h2>Connect With Us</h2>
         <p>
-          Have a question, feedback, or want to order ahead? Reach out through
-          our contact form, chat with us on social media, or visit our cafe.
+          Have a question about your RMCOFFEE COMPANY Rewards, want to order
+          bulk catering, or have feedback? Reach out to our Partner Support team
+          below.
         </p>
       </div>
       <div class="contact-grid">
         <div class="contact-card">
           <h3>Support</h3>
-          <p>
-            We are here to help you with orders, menu questions, or cafe
-            services.
-          </p>
+          <p>We are here to make your RMCOFFEE experience exceptional.</p>
           <div class="contact-info">
-            <p><strong>Location:</strong> Phnom Penh, Cambodia</p>
+            <p><strong>Headquarters:</strong> Phnom Penh, CAM</p>
+            <p><strong>Store Location:</strong> Phnom Penh, Cambodia</p>
             <p><strong>Phone:</strong> (+855) 10 444 404</p>
-            <p><strong>Email:</strong> puthearunsem@gmail.com</p>
+            <p><strong>Email:</strong> Support@rmcoffee.com</p>
           </div>
           <div class="social-panel">
-            <p>Connect on social media</p>
+            <p>Follow Starbucks on Social Media</p>
             <div class="social-buttons">
               <button class="social-btn" data-social-name="Facebook">
                 <span class="social-icon">📘</span> Facebook
@@ -262,12 +268,12 @@
     <div id="loginModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h2>Sign In</h2>
+          <h2>Admin</h2>
           <button class="close-btn">&times;</button>
         </div>
         <form id="loginForm" class="login-form">
           <div class="form-group">
-            <label for="email">Email Address</label>
+            <label for="email">Email</label>
             <input
               type="email"
               id="email"
@@ -282,7 +288,7 @@
               type="password"
               id="password"
               name="password"
-              placeholder="Enter your password"
+              placeholder="Enter password"
               required
             />
           </div>
@@ -296,40 +302,120 @@
           </div>
           <button type="submit" class="login-btn">Sign In</button>
           <p class="signup-text">
-            Don't have an account? <a href="#" class="signup-link">Sign Up</a>
+            Don't have account?
+            <a href="#" class="signup-link">Register</a>
           </p>
         </form>
       </div>
     </div>
 
-    <!-- Gmail Help Modal -->
-    <div id="gmailModal" class="modal gmail-modal">
-      <div class="modal-content gmail-modal-content">
-        <div class="modal-header">
-          <h2>Need a Gmail Account?</h2>
-          <button class="close-btn" id="gmailModalClose">&times;</button>
+    <!-- Login Error Modal (Password validation fail) -->
+    <div id="loginErrorModal" class="modal">
+      <div class="modal-content">
+        <div
+          class="modal-header error-modal-header"
+          style="border-bottom-color: rgba(178, 58, 50, 0.25)"
+        >
+          <h2 style="color: #b23a32">Authentication Failed</h2>
+          <button class="close-btn" id="errorModalClose" style="color: #b23a32">
+            &times;
+          </button>
         </div>
-        <div class="gmail-dialog-body">
-          <p>
-            If you don't remember your password, you can create a new Gmail
-            account to use with your RM CAFE orders and website login.
+        <div class="modal-body error-modal-body" style="padding-top: 10px">
+          <p style="margin-bottom: 20px; line-height: 1.6; color: #5c5c5c">
+            The security password you entered is incorrect. Please try again to
+            access the RMCOFFEE Store Admin Portal.
           </p>
-          <p>
-            Google accounts provide a secure email address for signing in and
-            managing your order notifications.
-          </p>
-          <div class="gmail-actions">
-            <button id="createGmailBtn" class="external-btn">
-              Create new Gmail account
-            </button>
-            <button id="openGmailSignInBtn" class="external-btn secondary-btn">
-              Go to Gmail sign-in
-            </button>
+          <button
+            id="tryAgainBtn"
+            class="login-btn"
+            style="
+              background-color: #b23a32;
+              color: #ffffff;
+              width: 100%;
+              border: none;
+              font-weight: 700;
+              border-radius: 8px;
+              padding: 14px;
+              cursor: pointer;
+            "
+          >
+            Try Again
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create Password Modal (Site-specific registration/reset) -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <div
+          class="modal-header"
+          style="
+            border-bottom: 1px solid rgba(207, 126, 83, 0.2);
+            padding-bottom: 15px;
+          "
+        >
+          <h2>Create Security Password</h2>
+          <button class="close-btn" id="registerModalClose">&times;</button>
+        </div>
+        <form id="registerForm" class="login-form" style="padding-top: 15px">
+          <p
+            style="
+              color: var(--text-beige);
+              font-size: 0.9em;
+              margin-bottom: 5px;
+              line-height: 1.6;
+            "
+          ></p>
+          <div class="form-group">
+            <label for="regEmail">Email</label>
+            <input
+              type="email"
+              id="regEmail"
+              name="regEmail"
+              placeholder="Enter your partner email"
+              required
+            />
           </div>
-          <p class="gmail-note">
-            This will open the official Google page in a new browser tab.
-          </p>
-        </div>
+          <div class="form-group">
+            <label for="regPassword">New Security Password</label>
+            <input
+              type="password"
+              id="regPassword"
+              name="regPassword"
+              placeholder="Minimum 4 characters"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="regConfirmPassword">Confirm Security Password</label>
+            <input
+              type="password"
+              id="regConfirmPassword"
+              name="regConfirmPassword"
+              placeholder="Confirm your new password"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="login-btn"
+            style="
+              background-color: var(--accent-copper);
+              color: var(--bg-dark-base);
+              font-weight: 700;
+              border: none;
+              border-radius: 8px;
+              padding: 14px;
+              cursor: pointer;
+              width: 100%;
+              transition: background-color 0.25s;
+            "
+          >
+            Save Password
+          </button>
+        </form>
       </div>
     </div>
 
@@ -337,34 +423,45 @@
     <div id="aboutModal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h2>About Us</h2>
+          <h2>Our Heritage</h2>
           <button class="close-btn" data-close-modal>&times;</button>
         </div>
         <div class="modal-body">
           <p>
-            RM CAFE is dedicated to serving premium coffee with a warm customer
-            experience. Our focus is on freshly roasted beans, skilled baristas,
-            and thoughtful service.
+            Our story begins in 1971 along the cobblestone streets of Seattle’s
+            historic Pike Place Market. It was here where Starbucks opened its
+            first store, welcoming customers with fresh-roasted coffee beans and
+            high-quality tea leaves.
           </p>
           <ul class="info-list">
             <li>
-              <strong>Premium quality:</strong> Single-origin beans and fresh
-              bakery ingredients.
+              <strong>Ethical Sourcing:</strong> Single-origin arabica beans
+              grown under responsible fair trade.
             </li>
             <li>
-              <strong>Expert baristas:</strong> Crafted drinks, latte art, and
-              flavor consistency.
+              <strong>Velvety Crafting:</strong> Skilled baristas blending
+              perfect microfoams and espresso pulls.
             </li>
             <li>
-              <strong>Community first:</strong> Comfortable workspace for study,
-              meetings, and hangouts.
+              <strong>The Third Place:</strong> Providing a warm, welcoming
+              space between work and home.
             </li>
             <li>
-              <strong>Fresh menu:</strong> Seasonal specials, classic favorites,
-              and sweet treats.
+              <strong>RMCOFFEE Rewards:</strong> Earn free beverages and
+              personalized deals on every sip.
             </li>
           </ul>
-          <a href="menu.html" class="external-btn"> See full story </a>
+          <a
+            href="menu.html"
+            class="external-btn"
+            style="
+              text-decoration: none;
+              text-align: center;
+              display: inline-block;
+            "
+          >
+            Explore Menu
+          </a>
         </div>
       </div>
     </div>
@@ -378,12 +475,12 @@
         </div>
         <div class="modal-body">
           <p>
-            Choose a channel below to connect with RM CAFE, leave feedback, or
-            follow the latest updates.
+            Connect with RMCOFFEE on official channels to discover seasonal
+            launches, campaigns, and more.
           </p>
           <div class="social-action-grid">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/starbucks"
               target="_blank"
               rel="noreferrer"
               class="external-btn social-link"
@@ -391,7 +488,7 @@
               ><span class="social-icon">📘</span> Facebook</a
             >
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/starbucks"
               target="_blank"
               rel="noreferrer"
               class="external-btn social-link"
@@ -399,7 +496,7 @@
               ><span class="social-icon">📸</span> Instagram</a
             >
             <a
-              href="https://www.twitter.com"
+              href="https://www.twitter.com/starbucks"
               target="_blank"
               rel="noreferrer"
               class="external-btn social-link"
@@ -407,7 +504,7 @@
               ><span class="social-icon">🐦</span> Twitter</a
             >
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/starbucks"
               target="_blank"
               rel="noreferrer"
               class="external-btn social-link"
@@ -432,9 +529,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <p>&copy; 2026 RM CAFE. All rights reserved.</p>
+      <p>&copy; 2026 RMCOFFEE Company. All rights reserved.</p>
     </footer>
 
-    <script src="../JS/script.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

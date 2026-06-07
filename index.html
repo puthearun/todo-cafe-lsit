@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=html/index.html" />
+    <title>RMCOFFEE Company - Redirecting...</title>
+    <script>
+      (function() {
+        var loc = window.location;
+        var path = loc.pathname;
+        if (!path.endsWith('/')) {
+          if (!path.substring(path.lastIndexOf('/')).includes('.')) {
+            path += '/';
+          } else {
+            path = path.substring(0, path.lastIndexOf('/') + 1);
+          }
+        }
+        window.location.replace(loc.origin + path + "html/index.html");
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting you to the RMCOFFEE Company... If you are not redirected automatically, please click <a href="html/index.html">here</a>.</p>
+  </body>
+</html>

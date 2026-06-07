@@ -58,40 +58,77 @@
   }
 
   function handleSignInFlow() {
-    const signInButton = getElement(".demo-btn");
+    const signInButton = getElement(".signin-btn");
     const loginModal = getElement("#loginModal");
     const loginForm = getElement("#loginForm");
     const forgotPasswordLink = getElement("#forgotPasswordLink");
-    const gmailModal = getElement("#gmailModal");
-    const gmailClose = getElement("#gmailModalClose");
-    const createGmailBtn = getElement("#createGmailBtn");
-    const openGmailSignInBtn = getElement("#openGmailSignInBtn");
+    const signupLink = getElement(".signup-link");
+    const registerModal = getElement("#registerModal");
+    const registerModalClose = getElement("#registerModalClose");
+    const registerForm = getElement("#registerForm");
+    
+    // Custom error elements
+    const loginErrorModal = getElement("#loginErrorModal");
+    const errorModalClose = getElement("#errorModalClose");
+    const tryAgainBtn = getElement("#tryAgainBtn");
 
     if (signInButton && loginModal) {
       signInButton.addEventListener("click", () => openModal(loginModal));
     }
 
-    if (forgotPasswordLink && gmailModal) {
+    if (forgotPasswordLink && registerModal) {
       forgotPasswordLink.addEventListener("click", (event) => {
         event.preventDefault();
         closeModal(loginModal);
-        openModal(gmailModal);
+        openModal(registerModal);
       });
     }
 
-    if (gmailClose) {
-      gmailClose.addEventListener("click", () => closeModal(gmailModal));
-    }
-
-    if (createGmailBtn) {
-      createGmailBtn.addEventListener("click", () => {
-        window.open("https://accounts.google.com/signup", "_blank");
+    if (signupLink && registerModal) {
+      signupLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        closeModal(loginModal);
+        openModal(registerModal);
       });
     }
 
-    if (openGmailSignInBtn) {
-      openGmailSignInBtn.addEventListener("click", () => {
-        window.open("https://accounts.google.com/signin", "_blank");
+    if (registerModalClose) {
+      registerModalClose.addEventListener("click", () => {
+        closeModal(registerModal);
+      });
+    }
+
+    if (registerForm) {
+      registerForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const email = getElement("#regEmail", registerForm)?.value.trim();
+        const password = getElement("#regPassword", registerForm)?.value;
+        const confirmPassword = getElement("#regConfirmPassword", registerForm)?.value;
+
+        if (!email || !password || !confirmPassword) {
+          alert("Please fill in all registration fields.");
+          return;
+        }
+
+        if (password.length < 4) {
+          alert("Password must be at least 4 characters long.");
+          return;
+        }
+
+        if (password !== confirmPassword) {
+          alert("Passwords do not match. Please verify.");
+          return;
+        }
+
+        try {
+          localStorage.setItem("sb_user_pwd_" + email.toLowerCase(), password);
+          alert("Password saved successfully for this website! You can now sign in using your new credentials.");
+          closeModal(registerModal);
+          registerForm.reset();
+          openModal(loginModal);
+        } catch (e) {
+          alert("Failed to save credentials locally. Please check your browser storage permissions.");
+        }
       });
     }
 
@@ -99,13 +136,40 @@
       loginForm.addEventListener("submit", (event) => {
         event.preventDefault();
         const email = getElement("#email", loginForm)?.value.trim();
-        const modal = loginModal;
+        const password = getElement("#password", loginForm)?.value;
+        const CORRECT_PASSWORDS = ["admin", "true"];
+
         if (!email) {
           alert("Please enter a valid email address.");
           return;
         }
 
-        // Save login state for the dashboard page
+        // Validate password
+        // Check if there is a custom password stored for this email
+        let customPassword = null;
+        try {
+          customPassword = localStorage.getItem("sb_user_pwd_" + email.toLowerCase());
+        } catch (e) {
+          // ignore storage access errors
+        }
+
+        const isCorrect = customPassword 
+          ? (password === customPassword)
+          : CORRECT_PASSWORDS.includes(password.toLowerCase());
+
+        if (!password || !isCorrect) {
+          // Authentication Failed
+          alert("Incorrect password. Try again.");
+          // Clear only the password field
+          const pwField = getElement("#password", loginForm);
+          if (pwField) pwField.value = "";
+          
+          // Re-open the login dialog modal
+          openModal(loginModal);
+          return;
+        }
+
+        // Save login state for the dashboard page on success
         try {
           sessionStorage.setItem("isLoggedIn", "true");
           sessionStorage.setItem("userEmail", email);
@@ -114,11 +178,27 @@
           // ignore storage errors
         }
 
-        closeModal(modal);
+        closeModal(loginModal);
         loginForm.reset();
         setTimeout(() => {
           window.location.href = "dashboard.html";
         }, 250);
+      });
+    }
+
+    // Try Again error modal controls
+    if (tryAgainBtn && loginErrorModal && loginModal) {
+      tryAgainBtn.addEventListener("click", () => {
+        closeModal(loginErrorModal);
+        setTimeout(() => {
+          openModal(loginModal);
+        }, 150);
+      });
+    }
+
+    if (errorModalClose && loginErrorModal) {
+      errorModalClose.addEventListener("click", () => {
+        closeModal(loginErrorModal);
       });
     }
   }
